@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -34,4 +35,13 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
+=======
+<header>
+  <p>ヘッダーとフッターをパーシャル化する</p>
+  <% if user_signed_in? %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  <% else %>
+   <%= link_to "ログイン", new_user_session_path %>
+  <% end %>
+>>>>>>> develop
 </header>
